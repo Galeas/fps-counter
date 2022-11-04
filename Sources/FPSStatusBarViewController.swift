@@ -72,7 +72,7 @@ class FPSStatusBarViewController: UIViewController {
 
     @objc static var statusBarWindow: UIWindow = {
         let window = FPStatusBarWindow()
-        window.windowLevel = .statusBar
+        window.windowLevel = .normal
         window.rootViewController = FPSStatusBarViewController()
         return window
     }()
